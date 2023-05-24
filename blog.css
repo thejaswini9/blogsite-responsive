@@ -1,0 +1,691 @@
+
+/*1  main-page-css */
+.navbar-image {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+}
+
+.heading {
+    font-size: 30px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.nav-elements {
+    background-color: #2ccb6d;
+    width: 100%;
+}
+
+.blogg-page {
+    padding-top: 90px;
+}
+
+/*1a main-container */
+.main-container {
+    background-image: url("https://monday.com/blog/wp-content/uploads/2021/03/design-process-.gif");
+    /* url("https://images5.alphacoders.com/117/1171598.jpg") */
+    ;
+    /* height: 500px; */
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    padding-bottom: 60px;
+
+}
+
+.heading-blog {
+    font-size: 27px;
+    font-family: "Roboto";
+}
+
+.para-blog {
+    text-align: center;
+    font-family: "Roboto";
+    font-family: 24px;
+}
+
+/* create blog-ripple-button -css  */
+.ripple-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.ripple-btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+}
+
+.ripple-btn:focus:not(:active)::before,
+.ripple-btn:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.ripple-btn:focus:not(:active)::before {
+    transition-duration: 0.6s;
+}
+
+.ripple-btn:active:before {
+    width: 100%;
+    padding-top: 100%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-out;
+}
+
+.custom-outline-button {
+    color: white;
+    margin-top: 20px;
+    /* background-color:transparent ; */
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: purple;
+    border-radius: 8px;
+
+    /*  position: relative ;
+  padding : 1em 1.5em;
+  color:white; 
+  background-color: transparent ;
+  font-size : 1.15em;
+  border-radius :100vmax;
+  border : 2px solid purple; 
+  overflow : hidden;
+  cursor :pointer; */
+}
+
+/*1b main-container2 */
+.main-container2 {
+    background-image: url("https://img.freepik.com/free-photo/old-camera-notebook-laptop-with-blue-pencil-cup-cappuccino-white-background_23-2147979092.jpg");
+    /* height: 400px; */
+    height: 100%;
+    background-size: cover;
+
+}
+
+/* .para3 {
+    margin-right: 250px;
+} */
+
+/* 1c main-container3 */
+.main-container3 {
+    background-image: url("https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-1591056.jpg&fm=jpg");
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 130px;
+    color: white;
+
+}
+
+
+/* 1d main-container-4 */
+.main-container4 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0090/9236/6436/articles/How_to_make_money_on_Shopify_1200x630.png?v=1629054522");
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 4px;
+    color: white;
+
+}
+
+.cont-4-sub {
+    padding-top: 60px;
+}
+
+.cont-4-para {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.para-blogs {
+    color: white;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+
+.heading-blogs {
+    color: white;
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+
+/* 1e main-container 5 */
+.main-container5 {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-background-material-of-xiaoqingxin-515-international-family-day-image_950909.jpg");
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.para4 {
+    /* margin-left: 300px; */
+    color: white;
+    font-family: "Roboto";
+}
+
+/* 1f main-container 6  */
+.main-container6 {
+    background-image: url("https://image.freepik.com/free-photo/global-social-network-connection-concept-connecting-people-icon-link_34629-416.jpg");
+    /* background-image: url("https://www.worldbank.org/content/dam/photos/780x439/2017/oct-3/GFDR-2017-cover-animated.gif"); */
+    height: 100%;
+    background-size: cover;
+    color: white;
+    font-family: "Roboto";
+    padding-bottom: 20px;
+}
+
+
+/* about-section */
+.about {
+    background-image: url("https://images.pexels.com/photos/42408/pexels-photo-42408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 50px;
+    color: black;
+
+
+}
+
+.para-about {
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.about-heading {
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+
+
+/* follow-us-section-container */
+
+.follow-us-section {
+    padding-bottom: 130px;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #cce9dd;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    margin-bottom: 70px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    /* color: skyblue; */
+    color: #4db68b;
+    font-size: 35px;
+
+}
+
+
+
+/* footer-section */
+.footer-section {
+    background-color: #0d2436;
+
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.food-munch-logo {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+/* 2 topics-page-css */
+
+.blog-head {
+    font-size: 25px;
+    font-family: "Roboto";
+    color: black;
+}
+
+.img {
+    height: 30vh;
+    /* height:30%; */
+    background-size: cover;
+}
+
+.img-boing {
+    height: 15vh;
+}
+
+.blog-para {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: black;
+}
+
+
+/*3 bg-container-css */
+.blog-title {
+    color: white;
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+.bg-container {
+    /* background-image: url("https://i.gifer.com/Mcjt.gif"); */
+    background-image: url("https://media.istockphoto.com/id/855399834/photo/closeup-of-photo-computer-generated-texture-background.jpg?s=170667a&w=0&k=20&c=WKLYq3I2mLQmqN8db4lyazt3eSb6gogRPEreWqIgPkM=");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 130px;
+}
+
+.blog-color {
+    color: black
+}
+
+.inputt {
+    border-width: 3px;
+    border-radius: 7px;
+}
+
+.textarea {
+    background-color: transparent;
+    border-radius: 10px;
+    border-width: 3px;
+    margin-top: 10px;
+}
+
+.button {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/* javascript used css is here below */
+.p {
+    font-size: 25px;
+    font-family: "Roboto";
+    color: white;
+}
+
+.blog-head {
+    font-size: 25px;
+    font-family: "Roboto";
+    color: black;
+
+
+}
+
+.del-padd {
+    padding-top: 30px;
+}
+
+
+
+@media (min-width: 800px) {
+
+    /*1  main-page-css */
+    .navbar-image {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+
+    }
+
+    .heading {
+        font-size: 35px;
+        font-family: "Roboto";
+        text-align: center;
+    }
+
+    .nav-elements {
+        background-color: #2ccb6d;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .blogg-page {
+        padding-top: 130px;
+    }
+
+    /*1a main-container */
+    .main-container {
+        background-image: url("https://monday.com/blog/wp-content/uploads/2021/03/design-process-.gif");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        color: white;
+        padding-bottom: 115px;
+
+    }
+
+    .heading-blog {
+        font-size: 33px;
+        font-family: "Roboto";
+    }
+
+    .para-blog {
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 20px;
+    }
+
+    .custom-outline-button {
+        color: white;
+        margin-top: 20px;
+        background-color: transparent;
+        width: 150px;
+        height: 56px;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: purple;
+        border-radius: 8px;
+    }
+
+    /*1b main-container2 */
+    .main-container2 {
+        background-image: url("https://img.freepik.com/free-photo/old-camera-notebook-laptop-with-blue-pencil-cup-cappuccino-white-background_23-2147979092.jpg");
+        height: 100%;
+        width: 100%;
+
+        background-size: cover;
+        padding-bottom: 43px;
+
+    }
+
+    .cont-2-para {
+        font-size: 20px;
+    }
+
+    /* .para3 {
+        margin-right: 250px;
+    } */
+
+    /* 1c main-container3 */
+    .main-container3 {
+        background-image: url("https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-1591056.jpg&fm=jpg");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 250px;
+        color: white;
+        padding-top: 50px;
+
+
+    }
+
+
+
+    /* 1d main-container-4 */
+    .main-container4 {
+        background-image: url("https://cdn.shopify.com/s/files/1/0090/9236/6436/articles/How_to_make_money_on_Shopify_1200x630.png?v=1629054522");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 44px;
+        color: white;
+
+    }
+
+    .cont-4-sub {
+        padding-top: 60px;
+    }
+
+    .cont-4-para {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .para-blogs {
+        color: white;
+        text-align: center;
+        font-family: "Roboto";
+    }
+
+
+    .heading-blogs {
+        color: white;
+        font-size: 25px;
+        font-family: "Roboto";
+    }
+
+
+    /* 1e main-container 5 */
+    .main-container5 {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-background-material-of-xiaoqingxin-515-international-family-day-image_950909.jpg");
+        height: 100%;
+        background-size: cover;
+        padding-bottom: 120px;
+    }
+
+    .para4 {
+        /* margin-left: 300px; */
+        color: white;
+        font-family: "Roboto";
+    }
+
+    /* 1f main-container 6  */
+    .main-container6 {
+        background-image: url("https://image.freepik.com/free-photo/global-social-network-connection-concept-connecting-people-icon-link_34629-416.jpg");
+        /* background-image: url("https://www.worldbank.org/content/dam/photos/780x439/2017/oct-3/GFDR-2017-cover-animated.gif"); */
+        height: 100%;
+        background-size: cover;
+        color: white;
+        font-family: "Roboto";
+        padding-bottom: 80px;
+    }
+
+
+    /* about-section */
+    .about {
+        background-image: url("https://images.pexels.com/photos/42408/pexels-photo-42408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 100px;
+        color: black;
+
+
+    }
+
+    .para-about {
+        font-size: 22px;
+        font-family: "Roboto";
+        font-weight: 500;
+    }
+
+    .about-heading {
+        font-size: 26px;
+        font-family: "Roboto";
+    }
+
+
+
+    /* follow-us-section-container */
+
+    .follow-us-section {
+        padding-bottom: 150px;
+    }
+
+    .follow-us-section-heading {
+        text-align: center;
+        color: #183b56;
+        font-family: "Roboto";
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .follow-us-icon-container {
+        background-color: #cce9dd;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin: 15px;
+        padding-top: 22px;
+        padding-bottom: 14px;
+        margin-bottom: 70px;
+        padding-right: 16px;
+        padding-left: 22px;
+    }
+
+    .icon {
+        /* color: skyblue; */
+        color: #4db68b;
+        font-size: 38px;
+
+    }
+
+
+
+    /* footer-section */
+    .footer-section {
+        background-color: #0d2436;
+
+    }
+
+    .footer-section-mail-id {
+        color: #959ead;
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    .footer-section-address {
+        color: #959ead;
+        font-family: "Roboto";
+        font-size: 15px;
+    }
+
+    .food-munch-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+
+
+
+    /* 2 topics-page-css
+    .blog-head {
+        font-size: 25px;
+        font-family: "Roboto";
+        color: black;
+    } */
+    .img {
+        height: 35vh;
+        background-size: cover;
+    }
+
+    .blog-para {
+        font-size: 18px;
+        font-family: "Roboto";
+        color: black;
+    }
+
+
+    /*3 bg-container-css */
+    .blog-title {
+        color: white;
+        font-size: 27px;
+        font-family: "Roboto";
+    }
+
+    .bg-container {
+        /* background-image: url("https://i.gifer.com/Mcjt.gif"); */
+        background-image: url("https://media.istockphoto.com/id/855399834/photo/closeup-of-photo-computer-generated-texture-background.jpg?s=170667a&w=0&k=20&c=WKLYq3I2mLQmqN8db4lyazt3eSb6gogRPEreWqIgPkM=");
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .blog-color {
+        color: black
+    }
+
+    .inputt {
+        border-width: 3px;
+        border-radius: 7px;
+    }
+
+    .textarea {
+        background-color: transparent;
+        border-radius: 10px;
+        border-width: 3px;
+        margin-top: 10px;
+    }
+
+    .button {
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    /* javascript used css is here below */
+    .p {
+        font-size: 25px;
+        font-family: "Roboto";
+        color: white;
+    }
+
+    .blog-head {
+        font-size: 25px;
+        font-family: "Roboto";
+        color: black;
+
+
+    }
+
+    .del-padd {
+        padding-top: 30px;
+    }
+}
