@@ -102,15 +102,7 @@
     border-color: purple;
     border-radius: 8px;
 
-    /*  position: relative ;
-  padding : 1em 1.5em;
-  color:white; 
-  background-color: transparent ;
-  font-size : 1.15em;
-  border-radius :100vmax;
-  border : 2px solid purple; 
-  overflow : hidden;
-  cursor :pointer; */
+
 }
 
 /*1b main-container2 */
@@ -417,20 +409,66 @@
         font-family: "Roboto";
         font-size: 20px;
     }
+    
+    
+/* create blog-ripple-button -css  */
+.ripple-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 
-    .custom-outline-button {
-        color: white;
-        margin-top: 20px;
-        background-color: transparent;
-        width: 150px;
-        height: 56px;
-        font-size: 20px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: purple;
-        border-radius: 8px;
-    }
+.ripple-btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+}
 
+.ripple-btn:focus:not(:active)::before,
+.ripple-btn:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.ripple-btn:focus:not(:active)::before {
+    transition-duration: 0.6s;
+}
+
+.ripple-btn:active:before {
+    width: 100%;
+    padding-top: 100%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-out;
+}
+
+.custom-outline-button {
+    color: white;
+    margin-top: 20px;
+    /* background-color:transparent ; */
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: purple;
+    border-radius: 8px;
+
+
+}
+    
     /*1b main-container2 */
     .main-container2 {
         background-image: url("https://img.freepik.com/free-photo/old-camera-notebook-laptop-with-blue-pencil-cup-cappuccino-white-background_23-2147979092.jpg");
